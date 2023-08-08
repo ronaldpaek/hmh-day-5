@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+#captcha-container {
+  text-align: center;
+  margin-block: 100px;
+  margin-inline: 50px;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: 16px;
+  background-size: 200% auto;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-position: right center;
+}
+
+.button-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media (min-width: 425px) {
+  .button-container {
+    flex-direction: row;
+  }
+}
+
+#yes-button {
+  background: linear-gradient(to right, #4caf50, #8bc34a);
+}
+
+#no-button {
+  background: linear-gradient(to right, #f44336, #e91e63);
+}
+
+.login-button {
+  background: linear-gradient(to right, #9c27b0, #673ab7);
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: 16px;
+  background-size: 200% auto;
+  transition: 0.5s;
+}
+
+.login-button:hover {
+  background-position: right center;
+}
+
+.robot-jail-body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("images/robot-jail.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 100px;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.robot-jail-body h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.robot-jail-body p {
+  font-size: 18px;
+}
+
+.timer-text {
+  background: linear-gradient(to right, #4caf50, #f44336);
+  background-clip: text;
+  color: transparent;
+  animation: flash 1s infinite;
+  -webkit-background-clip: text;
+}
+
+@keyframes flash {
+  0%,
+  100% {
+    color: transparent;
+  }
+  50% {
+    color: red;
+  }
+}
